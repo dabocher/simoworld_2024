@@ -1,9 +1,9 @@
 "use server";
 
 import { CreateUserParams } from "@/types";
-import { handleError } from "../utils";
 import { connectToDataBase } from "../database";
 import User from "../database/models/user.model";
+import { handleError } from "../utils";
 
 export const createUser = async (user: CreateUserParams) => {
   try {
