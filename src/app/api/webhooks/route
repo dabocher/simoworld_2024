@@ -72,10 +72,10 @@ export async function POST(req: Request) {
     };
 
     const newUser = await createUser(user);
-    /*   if(!newUser) {
-    return new Response("something went wrong",{ status: 500 });
-  }
- */
+    if (!newUser) {
+      return console.log("no user created");
+    }
+
     if (newUser) {
       await clerkClient.users.updateUserMetadata(id, {
         publicMetadata: {
