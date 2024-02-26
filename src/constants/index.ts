@@ -5,14 +5,14 @@ export const headerLinks = [
   },
   {
     name: "Acerca de",
-    href: "/about",
+    href: "/",
   },
   {
     name: "Eventos",
-    href: "/events",
+    href: "/",
   },
   {
     name: "Contacto",
-    href: "/contact",
+    href: "/",
   },
 ];

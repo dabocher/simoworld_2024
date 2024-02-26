@@ -4,7 +4,6 @@ export default authMiddleware({
   publicRoutes: ["/", "/api/webhooks/clerk"],
   // Routes that can always be accessed, and have
   // no authentication information
-  ignoredRoutes: ["/api/webhooks/clerk"],
 });
 
 export const config = {
